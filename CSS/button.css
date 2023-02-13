@@ -3,7 +3,7 @@ body {
   height: 100vh;
   display: flex;
   position: relative;
-  background: #3e3e5c;
+  background: #fdfdff;
   align-items: top;
   justify-content: center;
 }
@@ -21,14 +21,17 @@ body {
   font-family: "Open Sans";
   text-transform: uppercase;
 }
+
 .btn-flip:hover:after {
   opacity: 1;
   transform: translateY(0) rotateX(0);
 }
+
 .btn-flip:hover:before {
   opacity: 0;
   transform: translateY(50%) rotateX(90deg);
 }
+
 .btn-flip:after {
   top: 0;
   left: 0;
@@ -43,6 +46,7 @@ body {
   content: attr(data-back);
   transform: translateY(-50%) rotateX(90deg);
 }
+
 .btn-flip:before {
   top: 0;
   left: 0;
@@ -54,9 +58,11 @@ body {
   line-height: 40px;
   transition: 0.5s;
   position: relative;
-  background: #323237;
+  background: #49728c;
   content: attr(data-front);
   transform: translateY(0) rotateX(0);
 }
+
+
 
 /*# sourceMappingURL=button.css.map */
