@@ -58,7 +58,7 @@ body {
   line-height: 40px;
   transition: 0.5s;
   position: relative;
-  background: #49728c;
+  background: #323237;
   content: attr(data-front);
   transform: translateY(0) rotateX(0);
 }
