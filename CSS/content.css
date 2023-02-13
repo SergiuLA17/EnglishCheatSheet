@@ -1,6 +1,6 @@
 body {
-  background: -webkit-linear-gradient(left, #25c481, #25b7c4);
-  background: linear-gradient(to right, #25c481, #25b7c4);
+  background: -webkit-linear-gradient(left, #888d8d, #b5c8ca);
+  background: linear-gradient(to right, #4e5353, #b5c8ca);
 }
 .accordionWrapper {
   padding: 30px;
@@ -9,6 +9,7 @@ body {
   width: 80%;
   box-sizing: border-box;
   margin: 10%;
+  border-radius: 22px ;
   box-shadow: 0 1.5em 85px 0 rgba(0, 0, 0, 0.2);
 }
 .accordionItem {
@@ -22,15 +23,17 @@ body {
   cursor: pointer;
   margin: 0px 0px 10px 0px;
   padding: 10px;
-  background: #2980b9;
+  background: #49728c;
   color: #fff;
   width: 100%;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
-  border-radius: 3px;
+  border-radius: 20px;
   box-sizing: border-box;
 }
-.close .accordionItemContent {
+
+/* // отвечает за закрытие */
+.close .accordionItemContent { 
   height: 0px;
   transition: height 1s ease-out;
   -webkit-transform: scaleY(0);
@@ -40,10 +43,13 @@ body {
   float: left;
   display: block;
 }
-.open .accordionItemContent {
-  padding: 20px;
+/* // отвечает за открытие */
+.open .accordionItemContent { 
+  padding: 23px;
   background-color: #fff;
   border: 1px solid #ddd;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
   width: 100%;
   margin: 0px 0px 10px 0px;
   display: block;
@@ -65,18 +71,19 @@ body {
 
 .open .accordionItemHeading {
   margin: 0px;
-  -webkit-border-top-left-radius: 3px;
-  -webkit-border-top-right-radius: 3px;
-  -moz-border-radius-topleft: 3px;
-  -moz-border-radius-topright: 3px;
-  border-top-left-radius: 3px;
-  border-top-right-radius: 3px;
-  -webkit-border-bottom-right-radius: 0px;
-  -webkit-border-bottom-left-radius: 0px;
-  -moz-border-radius-bottomright: 0px;
-  -moz-border-radius-bottomleft: 0px;
+  
+   -webkit-border-top-left-radius: 3px; /* отвечает за  скругление углов */
+  -webkit-border-top-right-radius: 3px; /* отвечает за  скругление углов */
+  -moz-border-radius-topleft: 20px;  /* отвечает за  скругление углов */
+  -moz-border-radius-topright: 20px;
+  border-top-left-radius: 20px;  /* отвечает за  скругление углов */
+  border-top-right-radius: 20px;
+  -webkit-border-bottom-right-radius: 20px; /* отвечает за  скругление углов */
+  -webkit-border-bottom-left-radius: 20px; /* отвечает за  скругление углов */
+  -moz-border-radius-bottomright: 20px;
+  -moz-border-radius-bottomleft: 20px;
   border-bottom-right-radius: 0px;
-  border-bottom-left-radius: 0px;
-  background-color: #bdc3c7;
-  color: #7f8c8d;
+  border-bottom-left-radius: 0px; 
+  background-color: #49728c; /* цвет фона */
+  color: #e8f0f1; /* цвет текста */
 }
